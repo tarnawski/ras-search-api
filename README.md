@@ -1,11 +1,5 @@
-Symfony Microkernel Skeleton
+RAS SEARCH API
 ============================
-Symfony Microkernel Skeleton with tools that can be useful when developing microservices.
-Provisioning include:
-- apache2
-- php7
-- MySQL 5.7
-- composer
 
 ###Getting started
 
@@ -25,7 +19,7 @@ ansible-playbook -i hosts provision.yml -u {USERNAME} -k -K
 
 ### Create archive with project 
 ```
-composer archive --format=tar --file=skeleton --dir=vagrant/provisioning/
+composer archive --format=tar --file=search-api --dir=vagrant/provisioning/
 ```
 ### Deploy App
 ```

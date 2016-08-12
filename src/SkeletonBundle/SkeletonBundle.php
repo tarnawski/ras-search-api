@@ -1,9 +1,9 @@
 <?php
 
-namespace SkeletonBundle;
+namespace SearchBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class SkeletonBundle extends Bundle
+class SearchBundle extends Bundle
 {
 }

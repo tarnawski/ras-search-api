@@ -17,7 +17,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
-            new SkeletonBundle\SkeletonBundle(),
+            new SearchBundle\SearchBundle(),
         ];
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
@@ -59,6 +59,6 @@ class AppKernel extends Kernel
 
     protected function getAppName()
     {
-        return "skeleton";
+        return "search";
     }
 }

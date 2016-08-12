@@ -5,14 +5,14 @@
   become_method: sudo
   vars:
     symfony_env: dev
-    ansistrano_deploy_to: "/var/www/skeleton"
-    ansistrano_deploy_from: "{{ playbook_dir }}/skeleton.tar"
+    ansistrano_deploy_to: "/var/www/search"
+    ansistrano_deploy_from: "{{ playbook_dir }}/search.tar"
     ansistrano_deploy_via: "copy_unarchive"
-    ansistrano_archived_file: "skeleton.tar"
+    ansistrano_archived_file: "search.tar"
     ansistrano_after_symlink_tasks_file: "{{ playbook_dir }}/roles/deploy/tasks/after-symlink.yml"
     ansistrano_allow_anonymous_stats: no
     ansistrano_keep_releases: 20
-    ansistrano_rsync_set_remote_user: skeleton
+    ansistrano_rsync_set_remote_user: search
 
   roles:
     - { role: carlosbuenosvinos.ansistrano-deploy }
