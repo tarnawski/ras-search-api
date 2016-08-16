@@ -1,9 +1,10 @@
 SearchBundle\Entity\Site:
   site1:
     uuid:         e428e6f0-60c3-11e6-8b77-86f30ca893d3
-    name:         untyped-f-http-route-defaults-for-aspnet-web-api
-    url:          http://blog.ploeh.dk/2016/08/09/untyped-f-http-route-defaults-for-aspnet-web-api/
-    domain:       blog.ploeh.dk
+    url:          http://poczta.wp.pl/
+    domain:       poczta.wp.pl
+    title:        Poczta - Najlepsza Poczta, największe załączniki - WP
+    description:  Nieograniczona pojemność, największe załączniki 100MB, wersja mobilna, kontakty, kalendarz, galerie zdjęć, skuteczny antyspam - poczta nr 1 w Polsce!
     rate:         25
     language:     pl_PL
     createDate:   <dateTime()>

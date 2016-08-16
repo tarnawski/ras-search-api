@@ -1,0 +1,17 @@
+services:
+  guzzle.http.client:
+    class: GuzzleHttp\Client
+
+  search.google_strategy:
+    class: SearchBundle\Search\Strategy\GoogleStrategy
+    arguments:
+      - %google_base_url%
+      - %google_api_key%
+      - %google_search_id%
+      - '@guzzle.http.client'
+
+  search.strategy_factory:
+    class: SearchBundle\Search\StrategyFactory
+    arguments:
+      - '@search.google_strategy'
+

@@ -2,31 +2,32 @@ SearchBundle\Entity\Site:
   exclusion_policy: ALL
   properties:
     id:
-      expose: true
+      expose: false
       groups: [SITE_DETAILS]
     uuid:
-      expose: true
-      groups: [SITE_DETAILS]
-    name:
       expose: true
       groups: [SITE_DETAILS]
     url:
       expose: true
       groups: [SITE_DETAILS]
     domain:
+      expose: false
+      groups: [SITE_DETAILS]
+    title:
+      expose: true
+      groups: [SITE_DETAILS]
+    description:
       expose: true
       groups: [SITE_DETAILS]
     rate:
-      expose: true
+      expose: false
       groups: [SITE_DETAILS]
     language:
-      expose: true
+      expose: false
       groups: [SITE_DETAILS]
     createDate:
-      expose: true
+      expose: false
       groups: [SITE_DETAILS]
-      type: DateTime<'Y-m-d'>
     modifyDate:
-      expose: true
+      expose: false
       groups: [SITE_DETAILS]
-      type: DateTime<'Y-m-d'>

@@ -1,6 +1,7 @@
 SearchBundle\Entity\Site:
     type: entity
     table: site
+    repositoryClass: SearchBundle\Repository\SiteRepository
     id:
         id:
             type: integer
@@ -18,13 +19,6 @@ SearchBundle\Entity\Site:
             length: 50
             options:
                 fixed: false
-        name:
-            column: name
-            type: string
-            nullable: false
-            length: 255
-            options:
-                fixed: false
         url:
             column: url
             type: string
@@ -37,6 +31,20 @@ SearchBundle\Entity\Site:
             type: string
             nullable: false
             length: 255
+            options:
+                fixed: false
+        title:
+            column: title
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        description:
+            column: description
+            type: string
+            nullable: false
+            length: 2048
             options:
                 fixed: false
         rate:

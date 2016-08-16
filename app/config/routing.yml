@@ -1,0 +1,4 @@
+search:
+    path:     /search
+    defaults: { _controller: ApiBundle:Search:index, _format: json }
+    methods: [GET]

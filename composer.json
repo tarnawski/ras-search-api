@@ -11,10 +11,13 @@
     "symfony/symfony": "~3.0",
     "symfony/framework-bundle": "^3.0",
     "sensio/framework-extra-bundle": "^3.0",
+    "friendsofsymfony/rest-bundle": "1.7.*",
     "incenteev/composer-parameter-handler": "~2.1",
     "doctrine/doctrine-bundle": "^1.6",
     "doctrine/orm": "^2.5",
-    "ramsey/uuid": "^3.4"
+    "jms/serializer-bundle": "1.1.*",
+    "ramsey/uuid": "^3.4",
+    "guzzlehttp/guzzle": "~5.0"
   },
   "require-dev": {
     "behat/behat": "~3.0",

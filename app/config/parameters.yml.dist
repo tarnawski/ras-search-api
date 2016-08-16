@@ -7,4 +7,7 @@ parameters:
     database_user:     root
     database_password: ~
 
-    BING_API_KEY:      W7yKGqr55HmKIw3RgxjULX++0sH38zAKiurKpzuFa8k
+    #GOOGLE SEARCH
+    google_base_url:    https://www.googleapis.com/customsearch/v1
+    google_api_key:     AIzaSyBa2R3pHwAlhWLxNFp7mGTDV-yke_WBMvQ
+    google_search_id:   015873510809676834131:xlokwdku03o

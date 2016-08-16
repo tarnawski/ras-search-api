@@ -12,14 +12,17 @@ class Site
     /** @var  Uuid */
     private $uuid;
 
-    /** @var string */
-    private $name;
-
     /** @var  string */
     private $url;
 
     /** @var string */
     private $domain;
+
+    /** @var string */
+    private $title;
+
+    /** @var string */
+    private $description;
 
     /** @var  integer */
     private $rate;
@@ -32,11 +35,6 @@ class Site
 
     /** @var \DateTime */
     private $modifyDate;
-
-    public function __construct($uuid = null)
-    {
-        $this->uuid = $uuid ? $uuid : Uuid::uuid4()->toString();
-    }
 
     /**
      * @return int
@@ -55,19 +53,11 @@ class Site
     }
 
     /**
-     * @return string
+     * @param Uuid $uuid
      */
-    public function getName()
+    public function setUuid($uuid)
     {
-        return $this->name;
-    }
-
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
+        $this->uuid = $uuid;
     }
 
     /**
@@ -100,6 +90,38 @@ class Site
     public function setDomain($domain)
     {
         $this->domain = $domain;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * @param string $title
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
     }
 
     /**
