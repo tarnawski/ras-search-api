@@ -5,3 +5,10 @@ doctrine:
     dbal:
         dbname:   "%database_name%-dev"
 
+hautelook_alice:
+    db_drivers:
+        orm: ~
+    locale: pl_PL
+    seed: 1
+    persist_once: true
+    loading_limit: 5

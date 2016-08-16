@@ -1,0 +1,10 @@
+SearchBundle\Entity\Site:
+  site1:
+    uuid:         e428e6f0-60c3-11e6-8b77-86f30ca893d3
+    name:         untyped-f-http-route-defaults-for-aspnet-web-api
+    url:          http://blog.ploeh.dk/2016/08/09/untyped-f-http-route-defaults-for-aspnet-web-api/
+    domain:       blog.ploeh.dk
+    rate:         25
+    language:     pl_PL
+    createDate:   <dateTime()>
+    modifyDate:   <dateTime()>
