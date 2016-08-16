@@ -6,3 +6,5 @@ parameters:
     database_name:     search
     database_user:     root
     database_password: ~
+
+    BING_API_KEY:      W7yKGqr55HmKIw3RgxjULX++0sH38zAKiurKpzuFa8k

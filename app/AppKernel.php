@@ -17,6 +17,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Hautelook\AliceBundle\HautelookAliceBundle(),
+
             new SearchBundle\SearchBundle(),
         ];
 
