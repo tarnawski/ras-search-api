@@ -1,0 +1,33 @@
+SearchBundle\Entity\Site:
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: false
+      groups: [SITE_DETAILS]
+    uuid:
+      expose: true
+      groups: [SITE_DETAILS]
+    url:
+      expose: true
+      groups: [SITE_DETAILS]
+    domain:
+      expose: false
+      groups: [SITE_DETAILS]
+    title:
+      expose: true
+      groups: [SITE_DETAILS]
+    description:
+      expose: true
+      groups: [SITE_DETAILS]
+    rate:
+      expose: false
+      groups: [SITE_DETAILS]
+    language:
+      expose: false
+      groups: [SITE_DETAILS]
+    createDate:
+      expose: false
+      groups: [SITE_DETAILS]
+    modifyDate:
+      expose: false
+      groups: [SITE_DETAILS]

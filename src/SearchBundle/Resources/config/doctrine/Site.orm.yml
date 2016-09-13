@@ -1,0 +1,69 @@
+SearchBundle\Entity\Site:
+    type: entity
+    table: site
+    repositoryClass: SearchBundle\Repository\SiteRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        uuid:
+            column: uuid
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        url:
+            column: url
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        domain:
+            column: domain
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        title:
+            column: title
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        description:
+            column: description
+            type: string
+            nullable: false
+            length: 2048
+            options:
+                fixed: false
+        rate:
+            column: rate
+            type: integer
+            nullable: false
+        language:
+            column: language
+            type: string
+            nullable: false
+            length: 16
+            options:
+                fixed: false
+        createDate:
+            column: create_date
+            type: date
+            nullable: false
+        modifyDate:
+            column: modify_date
+            type: date
+            nullable: false
+    lifecycleCallbacks: {  }

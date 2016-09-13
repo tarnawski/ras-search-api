@@ -1,0 +1,18 @@
+SearchBundle\Model\Result:
+  exclusion_policy: ALL
+  properties:
+    url:
+      expose: true
+      groups: [RESULT_DETAILS]
+    title:
+      expose: true
+      groups: [RESULT_DETAILS]
+    url:
+      expose: true
+      groups: [RESULT_DETAILS]
+    description:
+      expose: true
+      groups: [RESULT_DETAILS]
+    rate:
+      expose: true
+      groups: [RESULT_DETAILS]
