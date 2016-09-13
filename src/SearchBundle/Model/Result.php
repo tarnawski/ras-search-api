@@ -13,11 +13,15 @@ class Result
     /** @var string */
     private $description;
 
-    public function __construct($url, $title, $description)
+    /** @var integer */
+    private $rate;
+
+    public function __construct($url, $title, $description, $rate)
     {
         $this->url = $url;
         $this->title = $title;
         $this->description = $description;
+        $this->rate = $rate;
     }
 
     /**
@@ -42,5 +46,21 @@ class Result
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRate()
+    {
+        return $this->rate;
+    }
+
+    /**
+     * @param int $rate
+     */
+    public function setRate($rate)
+    {
+        $this->rate = $rate;
     }
 }

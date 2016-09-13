@@ -48,7 +48,7 @@ class GoogleStrategy implements SearchStrategy
      */
     public function prepareQuery($query)
     {
-        return str_replace(' ','+',$query);
+        return str_replace(' ', '+', $query);
     }
 
     /**
@@ -66,7 +66,7 @@ class GoogleStrategy implements SearchStrategy
             ]
         ]);
 
-        if($res->getStatusCode() != 200){
+        if ($res->getStatusCode() != 200) {
             return false;
         }
 
@@ -85,14 +85,18 @@ class GoogleStrategy implements SearchStrategy
         $items = isset($data['items']) ? $data['items'] : [];
         $resultCollection = new ResultCollection();
 
-        foreach ($items as $item){
+        $rate = count($items);
+
+        foreach ($items as $item) {
             $result = new Result(
                 isset($item['link']) ? $item['link'] : '',
                 isset($item['title']) ? $item['title'] : '',
-                isset($item['snippet']) ? $item['snippet'] : ''
+                isset($item['snippet']) ? $item['snippet'] : '',
+                $rate
             );
 
             $resultCollection->addResult($result);
+            $rate--;
         }
 
         return $resultCollection;

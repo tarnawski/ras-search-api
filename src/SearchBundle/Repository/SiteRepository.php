@@ -13,10 +13,9 @@ class SiteRepository extends EntityRepository
     {
         $builder = $this->createQueryBuilder('s');
         $builder->select('s');
-        $builder->andWhere('s.url LIKE :url');
-        $builder->setParameter('url', '%' . $url . '%');
-        $builder->addOrderBy('s.rate', 'ASC');
+        $builder->andWhere('s.url = :url');
+        $builder->setParameter('url', $url);
 
-        return $builder->getQuery()->getResult();
+        return $builder->getQuery()->getOneOrNullResult();
     }
 }

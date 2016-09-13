@@ -1,0 +1,6 @@
+ApiBundle\Model\Query:
+    properties:
+        text:
+            - NotBlank: ~
+            - Length:
+                max:   256
